@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+    font: 600 32px 'Montserrat', sans-serif;
+}
+table {
+    font: 500 14px 'Montserrat', sans-serif;
+}
+.history_of_pay_link {
+    width: 100%;
+    color: #30419B;
+    text-align: right;
+}
+.history_of_pay {
+    height: 40px;
+    align-items: center;
+    margin-bottom: 30px!important;
+}
+.period__show__form {
+    height: 50px;
+    column-gap: 10px;
+    align-items: center;
+    flex-basis: auto;
+}
+.period__show__block {
+    margin-bottom: 30px;
+}
+.period__start-input, .period__end-input{
+    transition: all 0.4s ease;
+    height: 100%;
+    border: none;
+    box-shadow: inset 0 0 2px grey;
+    border-radius: 8px;
+    padding: 9px 64px 9px 30px;
+    color: #A2A2B8;
+}
+.period__start-input:focus, .period__end-input:focus {
+    box-shadow: inset 0 0 4px grey;
+    outline: none;
+}
+.period__btn {
+    height: 100%;
+    background: #30419B;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 9px!important;
+}
+.period__btn:hover {
+    background: #00407C;
+}
+.period__show-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+/* table padding */
+.table >:not(caption) > * > * {
+    padding: 15px 0 15px 20px;
+    vertical-align: middle;
+}
+.table__accordion >:not(caption) > * > * {
+    padding: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    vertical-align: middle;
+}
+/* table & accordion */
+.table {
+    border-color: transparent;
+}
+.table__month__title {
+    font-size: 16px;
+}
+.table__head__title {
+    color: #A2A2B8!important;
+}
+.table>:not(:first-child) {
+    border-top: none;
+}
+.table>thead {
+    border-top: 2px solid #F7F8FC;
+    border-bottom: 2px solid #F7F8FC;
+}
+.table__accordion>thead {
+    border-color: transparent;
+}
+.table__footer__border {
+    border-bottom: 3px solid #30419B;
+}
+.accordion-button {
+    font-size: 14px;
+    font-weight: 500;
+}
+.accordion__table__title {
+    font-size: 12px;
+    color: #A2A2B8!important;
+}
+.accordion__table__content {
+    font-size: 12px;
+}
+.accordion-body {
+    padding-left: 0;
+    padding-right: 0;
+}
+.accordion-button:focus {
+    background: #fff;
+    box-shadow: none;
+    color: #000;
+}
+.accordion-button:not(.collapsed) {
+    background: transparent;
+    color: #000;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}

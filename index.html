@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icn/favicon.svg" type="image/x-icon">
+    <!-- MONTSERRAT FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+    <!-- BS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Показания и приборы</title>
+</head>
+<body>
+    <!-- 
+        HEADER
+     -->
+    <header class="container-fluid row align-content-center m-0">
+        <a href="#" class="logo col-4 col-md-7 col-lg-4 col-xl-5" title="Водоканал-НТ">
+            <img src="img/logo.svg" alt="Logo" class="header__logo__img w-75">
+        </a>
+        <div class="col-2"></div>
+        <!-- INPUTS -->
+        <div class="header__inputs-block col-xl-5 col-lg-6 d-flex d-md-none d-lg-flex d-xl-flex justify-content-end align-items-center justify-self-end">
+            <form action="" class="row row-cols-xl-4 flex-lg-nowrap row-cols-lg-6 justify-content-end">
+                <div class="inputs__profile__icn col-xl-1 col-lg-1 p-md-0">
+                    <img src="icn/profile.svg" alt="Profile">
+                </div>
+                <input type="text" class="inputs-input col-xl-4 col-lg-5" value="Воскобойников И.В." readonly>
+                <input type="text" class="inputs-input p-0 col-xl-3 col-lg-3" value="/  0000646791" readonly>
+                <div class="inputs__down__arrow col-xl-1 col-lg-1 d-flex align-items-center p-0">
+                    <img src="icn/down_arrow_blk.svg" alt="Black_Arrow">
+                </div>
+                <div class="inputs__exit__icn d-xl-flex align-items-center col-xl-3 d-lg-none pe-0 d-md-none">
+                    <a href="">
+                        <img src="icn/exit.svg" alt="Exit">
+                        Выйти
+                    </a>
+                </div>
+            </form>
+        </div>
+    </header>
+    <!-- 
+        Breadcrumb
+     -->
+    <nav aria-label="breadcrumb d-xl-block d-lg-block d-md-none d-sm-none">
+        <ol class="breadcrumb d-xl-flex d-lg-flex d-md-none d-sm-none">
+            <li class="breadcrumb-item"><a href="#">Главная</a></li>
+            <li class="breadcrumb-item"><a href="#">Личный кабинет</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Показания и приборы</li>
+        </ol>
+    </nav>
+    <!-- 
+        TOP-NAV
+     -->
+    <main class="container-fluid main">
+        <!-- TOP NAV (SMALL) -->
+        <section class="top__nav__small-block row row-cols-3 d-lg-none d-xl-none justify-content-end mb-4 g-0">
+            <!-- NINPUTS -->
+            <div class="header__inputs-block header__inputs-block-small col-4 d-flex">
+                <form action="#" class="row row-cols-4 justify-content-center header__inputs-container">
+                    <div class="inputs__profile__icn col-1 pe-4">
+                        <img src="icn/profile.svg" alt="Profile">
+                    </div>
+                    <div class="row d-flex flex-column col-9 pe-0">
+                        <input type="text" class="inputs-input col" value="Воскобойников И.В." readonly>
+                        <input type="text" class="inputs-input col" value="0000646791" readonly>
+                    </div>
+                    <div class="inputs__down__arrow col-2 d-flex align-items-center p-0">
+                        <img src="icn/down_arrow_blk.svg" alt="Black_Arrow">
+                    </div>
+                    <div class="inputs__exit__icn d-xl-flex align-items-center col-xl-3 d-lg-none pe-0 d-md-none">
+                        <a href="">
+                            <img src="icn/exit.svg" alt="Exit">
+                            Выйти
+                        </a>
+                    </div>
+                </form>
+            </div>
+            <!-- MENU -->
+            <div class="top__nav__small-container row d-flex align-items-center">
+                <div class="col-2 p-0">
+                    <a href="#">
+                        <img src="icn/menu.svg" alt="Menu" class="top__nav__small-menu">
+                    </a>
+                </div>
+                <p class="col-8 m-0">
+                    Меню кабинета
+                </p>
+                <div class="col-2 p-0">
+                    <a href="#">
+                        <img src="icn/down_arrow.svg" alt="Down-Arrow" class="top__nav__small-arrow">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- TOP NAV (LARGE) -->
+        <section class="row top_nav d-xl-flex d-lg-flex d-md-none d-sm-none">
+            <a href="#" class="col-lg top_nav-content nav_content-pokazaniya col-xl col-lg-1">
+                <img src="icn/pokazaniya.svg" alt="Pokazaniya" class="nav_content-icn">
+                <p>
+                    Показания и приборы
+                </p> 
+            </a>
+            <a href="pages/nachislen.html" target="_blank" class="col-lg-1 top_nav-content nav_content-nachislen col-xl">
+                <img src="icn/nachisleniya.svg" alt="Nachisleniya" class="nav_content-icn">
+                <p>
+                    История
+                    начислений
+                </p>
+            </a href="#">
+            <a href="pages/oplata.html" class="col-lg-1 top_nav-content nav_content-oplataUslugi col-xl">
+                <img src="icn/oplata.svg" alt="Oplata" class="nav_content-icn">
+                <p>
+                    Оплата
+                    услуг
+                </p>
+            </a href="#">
+            <a href="#" class="col-lg-1 top_nav-content nav_content-uslugi col-xl">
+                <img src="icn/uslugi.svg" alt="Uslugi" class="nav-content- nav_content-icn">
+                <p>
+                    Мои
+                    услуги
+                </p>
+            </a href="#">
+            <a href="#" class="col-lg-1 top_nav-content nav_content-dannie col-xl">
+                <img src="icn/dannie.svg" alt="Dannie" class="nav_content-icn">
+                <p>
+                    Мои
+                    данные
+                </p>
+            </a href="#">
+            <a href="#" class="col-lg-2 top_nav-content nav_content-obrash col-xl col-md">
+                <img src="icn/svyaz.svg" alt="Obrasheniya" class="nav_content-icn">
+                <p>
+                    Мои
+                    обращения
+                </p>
+            </a href="#">
+        </section>
+        <!-- 
+            TEXT & ALERT BLOCK
+         -->
+        <section class="row alert__block">
+            <h1 class="alert__block-title">
+                Показания и приборы
+            </h1>
+            <div class="alert__container p-0">
+                <div class="alert__container-title d-flex">
+                    <img src="icn/alert.svg" alt="Alert">
+                    <p>
+                        Передача показаний производится в период с 10 по 15 число месяца
+                    </p>
+                </div>
+                <a href="#" class="alert__container-link">
+                        Как правильно снимать показания?
+                </a>
+            </div>
+        </section>
+        <!-- 
+            MAIN
+         -->
+        <section class="row mb-4 main_block">
+            <!-- ICN -->
+            <div class="col-md-auto col-lg-auto main_block-icn col-xl-auto">
+                <img src="icn/pribor.png" alt="Pribor">
+            </div>
+            <!-- TITLE -->
+            <div class="col-md col-lg main_block-title col-xl-3">
+                <p class="number_text">
+                    № Т 6510051 12
+                </p>
+                <div class="number_title-block">
+                    <p class="number_title">
+                        Кухня
+                    </p>
+                    <img src="icn/redact.svg" alt="Redact_Pen">
+                </div>
+                <p class="number_subtitle">
+                    Холодное водоснабжение
+                </p>
+                <a href="#" class="number_link">
+                    Информация о приборе
+                </a>
+            </div>
+            <!-- COST -->
+            <div class="col-md col-lg main_block-cost col-xl-2">
+                <p class="number_text">
+                    Последнее показание
+                </p>
+                <p class="number_title">
+                     87, 755
+                </p>
+                <p class="number_subtitle">
+                    14.09.2021
+                </p>
+                <a href="#" class="number_link">
+                    История показаний
+                </a>
+            </div>
+            <!-- POKAZAN -->
+            <div class="col-md-12 col-lg-auto main_block-inputs col-xl-6">
+                <p class="number_text">
+                    Передача показаний
+                </p>
+                <form action="">
+                    <div class="main_inputs">
+                        <input type="text" class="main_block_text" placeholder="0000,000">
+                        <input type="submit" value="Передать" class="main_block_btn">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- 
+            MAIN-2
+         -->
+         <section class="row mb-4 main_block">
+            <!-- ICN -->
+            <div class="col-md-auto col-lg-auto main_block-icn col-xl-auto">
+                <img src="icn/pribor.png" alt="Pribor">
+            </div>
+            <!-- TITLE -->
+            <div class="col-md col-lg main_block-title col-xl-3">
+                <p class="number_text">
+                    № Т 65640090 12
+                </p>
+                <div class="number_title-block">
+                    <p class="number_title">
+                        2-я ванна
+                    </p>
+                    <img src="icn/redact.svg" alt="Redact_Pen">
+                </div>
+                <p class="number_subtitle">
+                    Холодное водоснабжение
+                </p>
+                <a href="#" class="number_link">
+                    Информация о приборе
+                </a>
+            </div>
+            <!-- COST -->
+            <div class="col-md col-lg main_block-cost col-xl-2">
+                <p class="number_text">
+                    Последнее показание
+                </p>
+                <p class="number_title">
+                     87, 755
+                </p>
+                <p class="number_subtitle">
+                    14.09.2021
+                </p>
+                <a href="#" class="number_link">
+                    История показаний
+                </a>
+            </div>
+            <!-- POKAZAN -->
+            <div class="col-md-12 col-lg-auto main_block-inputs col-xl-6">
+                <p class="number_text">
+                    Передача показаний
+                </p>
+                <form action="">
+                    <div class="main_inputs">
+                        <input type="text" class="main_block_text" placeholder="0000,000">
+                        <input type="submit" value="Передать" class="main_block_btn">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- 
+            MAIN-3
+         -->
+         <section class="row mb-4 main_block">
+            <!-- ICN -->
+            <div class="col-md-auto col-lg-auto main_block-icn col-xl-auto">
+                <img src="icn/pribor_heat.png" alt="Pribor">
+            </div>
+            <!-- TITLE -->
+            <div class="col-md col-lg main_block-title col-xl-3">
+                <p class="number_text">
+                    А 9035076-10
+                </p>
+                <div class="number_title-block">
+                    <p class="number_title">
+                        Ван. комната
+                    </p>
+                    <img src="icn/redact.svg" alt="Redact_Pen">
+                </div>
+                <p class="number_subtitle">
+                    Горячее водоснабжение
+                </p>
+                <a href="#" class="number_link">
+                    Информация о приборе
+                </a>
+            </div>
+            <!-- COST -->
+            <div class="col-md col-lg main_block-cost col-xl-2">
+                <p class="number_text">
+                    Последнее показание
+                </p>
+                <p class="number_title">
+                     87, 755
+                </p>
+                <p class="number_subtitle">
+                    14.09.2021
+                </p>
+                <a href="#" class="number_link">
+                    История показаний
+                </a>
+            </div>
+            <!-- POKAZAN -->
+            <div class="col-md-12 col-lg-auto main_block-inputs col-xl-6">
+                <p class="number_text">
+                    Передача показаний
+                </p>
+                <form action="">
+                    <div class="main_inputs">
+                        <input type="text" class="main_block_text" placeholder="0000,000">
+                        <input type="submit" value="Передать" class="main_block_btn">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- 
+            MAIN-4
+         -->
+         <section class="row mb-4 main_block">
+            <!-- ICN -->
+            <div class="col-md-auto col-lg-auto main_block-icn col-xl-auto">
+                <img src="icn/pribor_heat.png" alt="Pribor">
+            </div>
+            <!-- TITLE -->
+            <div class="col-md col-lg main_block-title col-xl-3">
+                <p class="number_text">
+                    А 9035078-10
+                </p>
+                <div class="number_title-block">
+                    <p class="number_title">
+                        Прибор 4
+                    </p>
+                    <img src="icn/redact.svg" alt="Redact_Pen">
+                </div>
+                <p class="number_subtitle">
+                    Горячее водоснабжение
+                </p>
+                <a href="#" class="number_link">
+                    Информация о приборе
+                </a>
+            </div>
+            <!-- COST -->
+            <div class="col-md col-lg main_block-cost col-xl-2">
+                <p class="number_text">
+                    Последнее показание
+                </p>
+                <p class="number_title">
+                     87, 755
+                </p>
+                <p class="number_subtitle">
+                    14.09.2021
+                </p>
+                <a href="#" class="number_link">
+                    История показаний
+                </a>
+            </div>
+            <!-- POKAZAN -->
+            <div class="col-md-12 col-lg-auto main_block-inputs col-xl-6">
+                <p class="number_text">
+                    Передача показаний
+                </p>
+                <form action="">
+                    <div class="main_inputs">
+                        <input type="text" class="main_block_text" placeholder="0000,000">
+                        <input type="submit" value="Передать" class="main_block_btn">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- 
+            FOOTER
+        -->
+        <footer class="container-liguid footer__block">
+            <div class="footer__text-block">
+                <p>
+                    Copyright © 2009-2019 ООО «Водоканал-НТ»
+                </p>
+                <p>
+                    Все права защищены.
+                </p>
+            </div>
+        </footer>
+    </main>
+    
+    <!-- CUSTOM JS -->
+    <script src="js/script.js"></script>
+    <!-- BS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

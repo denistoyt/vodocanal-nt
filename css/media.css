@@ -1,0 +1,327 @@
+@media (min-width: 1900px) {
+    .container { 
+        max-width: 1530px;
+    }
+}
+@media (max-width: 1024px) {
+    .main_block-inputs {
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        text-align: justify;
+    }
+    .main_inputs {
+        display: grid;
+        grid-template-rows: repeat(2, 40px);
+        row-gap: 10px;
+    }
+    .main_block_text {
+        padding: 20px;
+    }
+    .main_block_btn {
+        padding: 10px;
+    }
+    header {
+        align-items: center;
+    }
+    .inputs__down__arrow {
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+        border: none;
+    }
+    .header__logo__img {
+        width: 120%!important;
+    }
+    .nachisl_main {
+        padding: 0 69px!important;
+    }
+    .period__btn {
+        padding: 9px!important;
+    }
+    .period__start-input, .period__end-input{
+        width: 275px!important;
+        padding: 9px 54px 9px 20px;
+    }
+    .top_nav {
+        justify-content: space-between;
+        margin-bottom: 30px!important;
+    }
+}
+@media (max-width: 768px) {
+    .main_block-icn img {
+        width: 100%;
+        object-fit: contain;
+        object-position: center;
+    }
+    .main_block {
+        padding: 20px;
+    }
+    .main_block-inputs {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        padding-left: 100px;
+    }
+    .main_inputs {
+        display: flex;
+    }
+    .top__nav__small-block {
+        width: 100%;
+        margin-right: 0!important;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        justify-items: center;
+        align-items: center;
+    }
+    .header__inputs-block {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+    }
+    .header__inputs-container {
+        width: 100%;
+    }
+    .header__logo__img {
+        width: 100%!important;
+    }
+    .main {
+        padding: 63px!important;
+    }
+    .period__start-input, .period__end-input{
+        width: 200px!important;
+        padding: 9px 54px 9px 20px;
+    }
+    .period__btn {
+        padding: 9px!important;
+    }
+}
+@media (max-width: 380px) {
+    .main {
+        padding: 30px;
+    }
+    .top_nav {
+        display: none;
+    }
+    .main_block {
+        display: grid;
+        grid-template-columns: 1fr 100px;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 
+        "T I"
+        "C I"
+        "INP INP";
+        row-gap:10px;
+    }
+    .main_block-icn {
+        grid-area: I;
+    }
+    .main_block-title {
+        grid-area: T;
+    }
+    .main_block-cost {
+        grid-area: C;
+        gap: 0;
+    }
+    .main_block-inputs {
+        grid-area: INP;
+        margin-top: 0;
+        padding-left: 10px;
+    }
+    .main_block-icn {
+        width: 85%;
+        margin: 0 auto;
+        object-position: center;
+        object-fit: cover;
+    }
+    p:not(:nth-last-child(2)) {
+        margin-bottom: 0;
+    }
+    .header__inputs-block {
+        display: none!important;
+    }
+    header {
+        display: flex;
+        padding: 26px!important;
+        justify-content: center;
+    }
+    .logo {
+        width: 100%;
+    }
+    .breadcrumb {
+        display: none;
+    }
+    .header__inputs-container {
+        width: 100%!important;
+    }
+    .header__inputs-block-small {
+        display: flex!important;
+        justify-content: center;
+    }
+    .top__nav__small-block {
+        display: flex;
+        row-gap: 10px;
+        height: 100%;
+        justify-content: center!important;
+    }
+    .inputs__exit__icn {
+        display: none;
+    }
+    .main {
+        padding: 26px!important;
+    }
+    .alert__container-title p {
+        font-size: 14px;
+    }
+    .alert__container-link {
+        font-size: 12px;
+    }
+    .alert__block-title {
+        font-size: 24px;
+    }
+    p, a, input, li {
+        font-size: 12px!important;
+    }
+    .number_title {
+        font-size: 18px!important
+    }
+    .table__block {
+        display: none;
+    }
+    .accordion {
+        display: none;
+    }
+}
+@media (max-width: 425px) {
+    .main {
+        padding: 30px;
+    }
+    .top_nav {
+        display: none;
+    }
+    .main_block {
+        display: grid;
+        grid-template-columns: 1fr 100px;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 
+        "T I"
+        "C I"
+        "INP INP";
+        row-gap:10px;
+    }
+    .main_block-icn {
+        grid-area: I;
+    }
+    .main_block-title {
+        grid-area: T;
+    }
+    .main_block-cost {
+        grid-area: C;
+        gap: 0;
+    }
+    .main_block-inputs {
+        grid-area: INP;
+        margin-top: 0;
+        padding-left: 10px;
+    }
+    .main_block-icn {
+        width: 85%;
+        margin: 0 auto;
+        object-position: center;
+        object-fit: cover;
+    }
+    p:not(:nth-last-child(2)) {
+        margin-bottom: 0;
+    }
+}
+@media (max-width: 320px) {
+    .top__nav__small-block {
+        width: 100%;
+    }
+}
+@media (max-width: 540px) {
+    .main {
+        padding: 30px;
+    }
+    .top_nav {
+        display: none;
+    }
+    .main_block {
+        display: grid;
+        grid-template-columns: 1fr 100px;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 
+        "T I"
+        "C I"
+        "INP INP";
+        row-gap:10px;
+    }
+    .main_block-icn {
+        grid-area: I;
+    }
+    .main_block-title {
+        grid-area: T;
+    }
+    .main_block-cost {
+        grid-area: C;
+        gap: 0;
+    }
+    .main_block-inputs {
+        grid-area: INP;
+        margin-top: 0;
+        padding-left: 10px;
+    }
+    .main_block-icn {
+        width: 85%;
+        margin: 0 auto;
+        object-position: center;
+        object-fit: cover;
+    }
+    p:not(:nth-last-child(2)) {
+        margin-bottom: 0;
+    }
+}
+@media (max-width: 280px) {
+    .main {
+        padding: 20px;
+    }
+    .top_nav {
+        display: none;
+    }
+    .main_block {
+        display: grid;
+        grid-template-columns: 1fr 100px;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 
+        "T I"
+        "C I"
+        "INP INP";
+        row-gap:10px;
+    }
+    .main_block-icn {
+        grid-area: I;
+    }
+    .main_block-title {
+        grid-area: T;
+    }
+    .main_block-cost {
+        grid-area: C;
+        gap: 0;
+    }
+    .main_block-inputs {
+        grid-area: INP;
+        margin-top: 0;
+        padding-left: 10px;
+    }
+    .main_block-icn {
+        width: 75%;
+        margin: 0 auto;
+        object-position: center;
+        object-fit: cover;
+    }
+    p:not(:nth-last-child(2)) {
+        margin-bottom: 0;
+    }
+    .top__nav__small-block {
+        width: 100%;
+    }
+}
